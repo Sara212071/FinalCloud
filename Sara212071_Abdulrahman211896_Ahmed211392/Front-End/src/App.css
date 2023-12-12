@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #333
+}
+
+body {
+  padding: 20px;
+  background: rgb(18, 18, 18);
+  background: linear-gradient(135deg, rgba(18, 18, 18, 1) 0%, rgba(36, 36, 36, 1) 100%);
+
+  background: rgb(34, 193, 195);
+    background: linear-gradient(90deg, rgba(34, 193, 195, 1) 0%, rgba(255, 221, 147, 1) 100%);
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}

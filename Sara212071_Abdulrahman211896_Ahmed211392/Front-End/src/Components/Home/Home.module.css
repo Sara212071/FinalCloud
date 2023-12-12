@@ -1,0 +1,99 @@
+.innerApp {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+
+.playLists {
+  display: flex;
+  justify-content: flex-start;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.playList {
+  padding: 20px;
+  text-align: center;
+  width: 220px;
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.45);
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(15px);
+  position: relative;
+  border-radius: 0.75rem;
+  transition: 0.1s;
+  position: relative;
+  overflow: hidden;
+}
+
+
+.playList::after {
+  content: "";
+  position: absolute;
+  transition: 0.4s;
+  transition-delay: .03s;
+  background-color: #1db954;
+  height: 4px;
+  width: 110%;
+  bottom: 0;
+  border-top-right-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+}
+
+.playList:hover::after {
+    height: 100%;
+    background-color: rgba(29, 185, 84, 0.8);
+    backdrop-filter: blur(10px);
+}
+
+.playList .content {
+    transition: .3s;
+}
+
+.playList:hover .content {
+    transform: translateY(-200%);
+}
+
+.playList button {
+  transition: 0.3s;
+  transition-delay: .4s;
+  background-color: #fff;
+  color: #1db954;
+  margin-top: 10px;
+  padding: 5px 15px;
+  border-radius: 0.5rem;
+  border: 2px solid #FFF;
+  background-color: #fff;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  z-index: 10;
+  left: 50%;
+  top: 110%;
+  transform: translateX(-50%);
+  background-size: 100% 400%;
+  background-position: 100% 0%;
+  transition: .2s;
+
+
+}
+
+.playList:hover button {
+    left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.playList button:hover {
+    color: #FFF;
+    background-position: 100% 100%;
+    background: linear-gradient(45deg, rgba(34, 193, 195, 1) 0%, rgba(255, 221, 147, 1) 100%);
+    cursor: pointer;
+}
