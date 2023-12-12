@@ -1,0 +1,10 @@
+POST  http://localhost:3000/products
+Content-Type: application/json
+
+{
+
+"name": "Microsoft Surface",
+"description": "nice laptop",
+"price":80000,
+"imgURL": "https://www.google.com/imgres?imgurl=https%3A%2F%2Fcdn-dynmedia-1.microsoft.com%2Fis%2Fimage%2Fmicrosoftcorp%2FSurface-Pro-8-HL-Powerful%3AVP2-859x540&tbnid=DpjRyBIAjFtACM&vet=12ahUKEwitr_-l6vuCAxXZoCcCHVrTAsMQMygJegUIARCAAQ..i&imgrefurl=https%3A%2F%2Fwww.microsoft.com%2Fen-ca%2Fd%2Fsurface-pro-8%2F8qwcrtq8v8xg&docid=B5BX5aR4f9WK2M&w=859&h=540&q=microsoft%20surface&client=avast-a-1&ved=2ahUKEwitr_-l6vuCAxXZoCcCHVrTAsMQMygJegUIARCAAQ"
+}

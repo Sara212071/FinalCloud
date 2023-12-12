@@ -1,0 +1,63 @@
+.innerList {
+}
+
+.innerList ul {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 900px;
+}
+
+.innerList ul li {
+    padding:  20px;
+  height: fit-content;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.45);
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(15px);
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.innerList ul li .poster {
+    width: 100px;
+    overflow: hidden;
+    border-radius: 20px;;
+}
+
+.innerList ul li .poster img {
+    width: 100%;
+    border-radius: 20px;;
+}
+
+.innerList ul li .info {
+}
+
+.innerList ul li .info h2 {
+}
+
+.innerList ul li .info h4 {
+}
+
+.innerList ul li .options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.innerList ul li .options button {
+    width: 100px;
+    padding: 5px ;
+}
+
+.innerList ul li .options button:nth-of-type(1) {
+}
+
+.innerList ul li .options button:nth-of-type(2) {
+}
